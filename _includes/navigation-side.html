@@ -1,0 +1,9 @@
+<ul class="ul navigation-vertical">
+    {% for page in site.pages %}
+        {% if page.title %}
+        <li class="li li-vertical">
+            <a class="page-link" href="{{page.url | relative_url}}" >{{page.title}}</a>  
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

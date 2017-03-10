@@ -2,26 +2,93 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: 56px;
+  background-color: $header-bg-color;
+  min-height: 65px;
+  min-width: 100%;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
+.site-logo {
+  height: 65px;
+  width: 65px;
+  float: left;
+}
+.li-horizontal {
+  float: left;
+}
+
+.li-horizontal a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: $header-bg-color;
+  background-color: $navigation-bg-color;
+}
+
+.li-horizontal a:hover:not(.active) {
+    background-color: $title-color;
+    text-decoration: none;
+    color: $navigation-text-color
+}
+
+.li-vertical a {
+  //display: left;
+  //padding: 10px;
+  //text-align: left;
+  color: black;
+  //background-color: $navigation-bg-color;
+}
+
+.li-vertical a:hover:not(.active) {
+    //background-color: $title-color;
+    text-decoration: none;
+    color: $title-color;
+}
+
+.navigation-horizontal {
+  clear: left;
+  background-color: $navigation-bg-color;
+  list-style-type: none;
+  //padding: 0px;
+  margin: 65px;
+  width: 100%;
+
+}
+
+.navigation-vertical {
+  float: right;
+  //background-color: $navigation-bg-color;
+  list-style-type: square;
+  //padding: 0px;
+
+}
+
 .site-title {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 300;
-  line-height: 56px;
+  color: $title-color;
+  line-height: 65px;
   letter-spacing: -1px;
   margin-bottom: 0;
+  margin-left: 10px;
   float: left;
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $title-color;
   }
+}
+
+.site-subtitle {
+  font-size: 28px;
+  font-weight: 100;
+  color: black;
+  line-height: 65px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  float: left;
 }
 
 .site-nav {
@@ -95,6 +162,8 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+  bottom: 0px;
+
 }
 
 .footer-heading {
@@ -164,6 +233,7 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+  min-height: 200px;
 }
 
 .page-heading {

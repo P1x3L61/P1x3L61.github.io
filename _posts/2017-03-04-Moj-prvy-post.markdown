@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title:  "Môj prvý post!"
 date:   2017-03-04 10:32:00 +0100
 permalink: /:year/:month/:day/helloworld
@@ -7,6 +7,7 @@ permalink: /:year/:month/:day/helloworld
 ---
 
 Volám sa Peter Tibenský a toto je môj prvý príspevok :smile: .
+<!-- more -->
 
 ![obrazok]({{site.url}}/files/helloworld.png)
 
