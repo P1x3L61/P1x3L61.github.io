@@ -2,10 +2,14 @@
 
   <div class="wrapper">
 
-    {% include navigation-side.html %}
+    <h2 style="float: left;" class="footer-heading">{{ site.title | escape }} (c) {{site.time | date: '%Y'}} </h2>
 
-    <h2 class="footer-heading">{{ site.title | escape }} (C) {{site.time | date: '%Y'}} </h2>
+    <div style="max-width: 200px; float: right;">
+        <h3> Rýchla navigácia: </h3>
+        {% include navigation-side.html %}
+    </div>
 
+    
 
   </div>
 

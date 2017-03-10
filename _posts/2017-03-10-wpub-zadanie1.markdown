@@ -1,6 +1,7 @@
 ---
 layout: wpub_assignment
 permalink: /wpub/zadanie1/
+author: tibensky
 ---
 
 **Využitie filtrov:**

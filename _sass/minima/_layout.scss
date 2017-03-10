@@ -37,7 +37,7 @@
   //display: left;
   //padding: 10px;
   //text-align: left;
-  color: black;
+  color: $header-bg-color;
   //background-color: $navigation-bg-color;
 }
 
@@ -58,11 +58,17 @@
 }
 
 .navigation-vertical {
-  float: right;
+  clear: right;
+  float: left;
   //background-color: $navigation-bg-color;
   list-style-type: square;
   //padding: 0px;
+  bottom: 0px;
 
+}
+
+.light-text {
+  font-weight: 200;
 }
 
 .site-title {
@@ -162,7 +168,12 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
-  bottom: 0px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $subtitle-color;
+  color: $header-bg-color;
+  //position: absolute;
 
 }
 

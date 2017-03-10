@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{{content}}
+
+{% if page.author %}
+    <hr>
+    <div class="wrapper">
+        <b>Autor článku:</b> {% assign author = site.data.people[page.author] %} {{author.name}} {{author.surname}}
+
+        <p class="light-text">
+            {{author.popis}}
+        </p>
+
+
+    </div>
+{% endif %}
