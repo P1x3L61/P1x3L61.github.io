@@ -2,8 +2,11 @@
 
   <div class="wrapper">
 
-    <h2 style="float: left;" class="footer-heading">{{ site.title | escape }} (c) {{site.time | date: '%Y'}} </h2>
-
+    <div  style="float: left;">
+      <p class="footer-heading">{{ site.title | escape }} (c) {{site.time | date: '%Y'}} </p>
+      <b>Kontakt:</b>
+      <p style="font-size: 14px; font-weight: 100;">{{site.email}} </p>
+    </div>
     <div style="max-width: 200px; float: right;">
         <h3> Rýchla navigácia: </h3>
         {% include navigation-side.html %}

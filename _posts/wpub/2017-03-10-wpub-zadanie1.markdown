@@ -34,7 +34,7 @@ Dokumentácia k prvému zadaniu
 - [o autorovi]({{site.url}}/o-mne/)
 - [hobby]({{site.url}}/hobby/)
 - [podstránka konkrétneho seriálu]({{site.url}}/hobbies/movies/westworld/)
-- [profesia]({{site.url}}/profesia)
+- [developerský profil]({{site.url}}/profesia)
 - [podstránka konkrétneho projektu]({{site.url}}/wpub/zadanie1/)
 
 _ _ _
@@ -47,30 +47,33 @@ _ _ _
     - Podstránky s layoutom *wpub_assignmnet* využívajú premennú *assignmnent_id*, ktorá je potrebná na prístup k informáciam o zadaní z dátového súboru *projects_info.yml*. Tam sú uložené informácie ako krátky popis zadania, možný počet bodov za zadanie alebo požiadavky spoločne s informáciou, či boli v riešení zadania splnené alebo nie.
 
 - thumbnail-url
-    - Príspevky s layoutom *hobby* obsahujú tuto premennú, ktorá odkazuje na náhľadový obrázok v priečiku [files]({{site.url}}/files/). Náhľadový obrázok je použitý v layoute *hobby*, ako aj na podstránke *hobby*
+    - Príspevky s layoutom *hobby* obsahujú tuto premennú, ktorá odkazuje na náhľadový obrázok v priečiku [files]({{site.url}}/files/). Náhľadový obrázok je použitý v layoute *hobby*, ako aj na podstránke *[hobby]({{site.url}}/hobby/)*
 
 - inprogress
     - Projektové príspevky obsahujú túto premennú na vyjadrenie, či je projekt stále aktívny, alebo už bolo dokončený a ďalej sa na ňom nepracuje. Tento atribút využíva layout *project*, ktorý podľa bool hodnoty pridelenej tejto premennej zobrazí informáciu, či je projekt dokončený alebo sa na projekte pracuje.
 
+- type
+    - V kolekcii hobbies niektoré príspevky (o filmoch alebo seriáloch) obsahujú premennú *type*, ktorá určuje, že sa jedná o film alebo seriál.
+
+- ended, csfd, genres a genre
+    - V kolekcii *hobbies* vystupujú tieto premenné na označenie, či sa nahrávanie seriálu skončilo, na určenie hodnotenia podľa serveru ČSFD a na definovanie žánrov. Tieto premenné sú špecifické pre hobby typu *movie* a *series*, preto layout *hobby* nezobrazuje tieto informácie pri iných druhoch hobby.
+
+- title
+    - Titulka príspevku sa využíva v layoutoch *classic* a *home*. V *classic* sa titulka nastaví na začiatok príspevku, v *home* sa použije pri výpise najnovších príspevkov. Titulku obsahujú príspevky, ako aj iné podstránky (pages) webstránky. Titulka príspevku sa zobrazuje aj v titulnej hlavičke stránky v prehliadači.
 
 
 **Okrem premenných v šablónach používam aj premenné typické pre niektoré podstránky:**
 
-- title
-    - Titulka príspevku sa využíva v layoutoch *classic* a *home*. V *classic* sa titulka nastaví na začiatok príspevku, v *home* sa použije pri výpise najnovších príspevkov. Titulku obsahujú príspevky, ako aj iné podstránky (pages) webstránky. Titulka príspevku sa zobrazuje aj v titulnej hlavičke stránky v prehliadači.
 - description
-    - Podstránky (pages) ako [hobby]({{site.url}}/hobby/), [profesia]({{site.url}}/profesia) alebo [o autorovi]({{site.url}}/o-mne/) obsahujú premennú *description* ktorá obsahuje krátku slovnú definíciu webstránky. Tá sa používa napríklad na [úvodnej stránke]({{site.url}}) v rozcestníku webstránky v šablóne *home*.
+    - Podstránky (pages) ako [hobby]({{site.url}}/hobby/), [profesia]({{site.url}}/profesia) alebo [o autorovi]({{site.url}}/o-mne/) obsahujú premennú *description* ktorá obsahuje krátku slovnú definíciu podstránky. Tá sa používa napríklad na [úvodnej stránke]({{site.url}}) v rozcestníku webstránky v šablóne *home*.
 - welcome-message
     - Táto premenná sa využíva na [domovskej stránke]({{site.url}}) a zobrazuje správu na privítanie. Premenná je uložená v konfiguračnom súbore.
-- type
-    - V kolekcii hobbies niektoré príspevky (o filmoch alebo seriáloch) obsahujú premennú *title*, ktoré určuje, že sa jedná o film alebo seriál.
-- ended, csfd, genres a genre
-    - V kolekcii *hobbies* vystupujú tieto premenné na označenie, či sa nahrávania seriálu skončilo, na urcenie hodnotenia podľa serveru ČSFD a na definovanie žánrov. Tieto premenné sú špecifické pre hobby typu *movie* a *series*, preto layout *hobby* nezobrazuje tieto informácie pri iných druhoch hobby.
+
 _ _ _
 
 **Stránka využíva tieto kolekcie:**
 - hobbies
-    - Kolekcia hobbies združuje príspevky, ktoré nemajú žiadnu chronologickú postupnosť a preto som sa rozhodol využiť kolekciu miesto článku (post). Ide o kolekciu markdown súborov, ktoré využívajú layout *hobby*
+    - Kolekcia hobbies združuje príspevky, ktoré nemajú žiadnu chronologickú postupnosť a preto som sa rozhodol využiť kolekciu miesto článku (post). Ide o kolekciu markdown súborov, ktoré využívajú layout *hobby* a ich zoznam sa nachádza na stránke [hobby]({{site.url}}/hobby/).
 
 **Šablóny využívajú tieto dátové súbory:**
 - people.yml
@@ -146,9 +149,15 @@ _ _ _
 **Využitie pluginov:**
 
 Na stránke je nainštalovaný plugin [Emoji for jekyll](https://github.com/yihangho/emoji-for-jekyll), ktorý transformuje emoji kód na konkrétnu ikonu. 
-Preto sa *: smile :* zmení na ikonu :smile:
+Preto sa *: smile :* zmení na ikonu :smile:. Tento plugin nefunguje na Github Pages, preto sa môže zobrazenie emotikon online a na lokálnej verzii líšiť.
 
 _ _ _
 
+Ďalšie informácie
+---
+
 **Pri tvorbe tejto webstránky bola použitá nasledovná [farebná schéma](http://www.colorcombos.com/color-schemes/7626/ColorCombo7626.html)**
 ![color-scheme](http://s3.amazonaws.com/colorcombos-images/users/1/color-schemes/color-scheme-7626-main.png?v=20150512172013)
+
+
+Webstránka bola optimalizovaná pre prehliadač Safari verzie 10.0.3. 

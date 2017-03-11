@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Profesia & Škola
+title: Developerský profil
 permalink: /profesia/
 description: "Informácie o mojom vzdelaní, projekty, ktoré riešim alebo na ktorých som pracoval. Taktiež dokumentácia k zadaniam z predmetu Webové publikovanie"
 ---
