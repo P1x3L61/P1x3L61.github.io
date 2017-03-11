@@ -3,3 +3,7 @@ tibensky:
  surname: Tibenský
  datum-narodenia: 16.06.1995
  popis: Autor je študentom Slovenskej technickej univerzity. Študuje na Fakulte informatiky a informačných technológií v obore informatika.
+
+admin:
+ name: Administrátor
+ popis: Článok bol napísaný správcom webstránky.

@@ -1,0 +1,15 @@
+wpub_1:
+ possible-score: 6
+ short-description: "Tvorba webového sídla"
+ requirements:
+  - req: "aspoň 5 podstránok, pri využití aspoň 3 rôznych rozložení (layout-ov)"
+    fulfilled: false
+  - req: "aspoň 5 premenných"
+    fulfilled: false
+  - req: "kolekcie alebo dátové súbory"
+    fulfilled: true
+  - req: "aspoň 5 filtrov alebo tagov"
+    fulfilled: false
+  - req: "aspoň 1 plugin (okrem pagination)"
+    fulfilled: true
+

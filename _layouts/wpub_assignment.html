@@ -1,5 +1,26 @@
 ---
 layout: project
 ---
-Tu bude predpísaný layout pre posty o wpub zadaniach
+Tu bude predpísaný layout pre posty o wpub zadaniach. Bude obsahovať špeciálny stĺpec, kde sa budú zobrazovať ďalšie projekty/zadania
+ {% assign projectinfo = site.data.projects_info[page.assignment-id] %}
+<div class="wrapper" style="margin: 10px;">
+    <hr>
+    <div style="text-align: center;">
+        <b style="font-size: 20px;">Informácie o zadaní:</b>
+    </div>
+    <div class="assignment-info-text">
+        <p>Krátky popis zadania: {{ projectinfo.short-description }}</p>
+        <p>Možný počet bodov: {{ projectinfo.possible-score }}</p>
+        <p>
+            Požiadavky:
+            <ul>
+                {% for requirement in projectinfo.requirements %}
+                <li>{{ requirement.req }}{% if requirement.fulfilled == true %}<i style="color: mediumseagreen"> - Splnené </i>{% endif %}</li>
+                {% endfor %}
+            </ul>
+        </p>
+    </div>
+    <hr>
+</div>
+
 {{content}}
