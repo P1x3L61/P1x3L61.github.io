@@ -10,6 +10,12 @@
   position: relative;
 }
 
+.offsetter {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .site-logo {
   height: 65px;
   width: 65px;
@@ -72,6 +78,85 @@
 }
 .assignment-info-text {
   font-weight: 400;
+}
+
+.thumbnail {
+  height: 128px;
+  max-width: 128px;
+ // display: inline;
+}
+
+.text-thumbnail {
+  font-size: 36px;
+  //text-align: center;
+  //float: right;
+  color: $subtitle-color;
+  text-decoration: none;
+}
+.text-thumbnail:hover {
+  text-decoration: none;
+}
+
+.left-column {
+  vertical-align: top;
+  float: left;
+  width: 30%;
+}
+
+.right-column {
+  vertical-align: top;
+  float: right;
+  width: 70%;
+}
+
+.little-text {
+  font-size:10px;
+}
+
+.ordered-list {
+  font-size: 50px; 
+  margin-left: 60px;
+  color: $title-color;
+}
+
+.list-cell {
+  height: 54px; 
+  width: 256px; 
+  background-color: $navigation-bg-color;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+.list-cell a {
+  vertical-align: center;
+  color: $title-color;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+
+.list-cell a:hover {
+  background-color: $title-color;
+  color: $navigation-text-color;
+  text-decoration: none;
+}
+
+.project-done {
+  background-color: mediumseagreen;
+  color: $subtitle-color;
+  
+  margin: 10px;
+  text-align: center;
+}
+
+.project-in-progress {
+  background-color: $title-color;
+  color: $header-bg-color;
+  
+  margin: 10px;
+  text-align: center;
 }
 
 .site-title {

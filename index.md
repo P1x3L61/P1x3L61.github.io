@@ -3,10 +3,9 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-welcome-message: "Vitaj na mojom webe!"
 ---
 
-{{page.welcome-message}}
+{{site.welcome-message}}
 ---
 Táto webová stránka vznikla ako projekt na predmet Webové publikovanie. Nájdete tu informácie o zaujímavých projektoch, ktoré som vyvíjal, ako aj informácie o rôznych veciach, ktoré ma zaujímajú.
 

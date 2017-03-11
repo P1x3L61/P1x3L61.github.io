@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 title:  "Welcome to Jekyll!"
 date:   2017-02-23 18:49:22 +0100
 categories: jekyll update

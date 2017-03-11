@@ -2,5 +2,26 @@
 layout: classic
 ---
 
-Tu bude predpísaný layout pre jeden prvok kolekcie z hobby
-{{content}}
+<div style="margin-bottom: 256px;">
+    <div class="left-column">
+         <img src="{{site.url}}/files/{{page.thumbnail-url}}" style="max-width: 256px; max-height: 256px; display: block"/> 
+        
+        <p>Typ:
+        {% if page.type == "series" %}
+             Seriál
+        {% elsif page.type == "movie" %}
+             Film
+        {% else %}
+            iný
+        {% endif %}
+        </p>
+    </div>
+
+    <div class="right-column">
+        {{content}}
+    </div>
+</div>
+
+
+
+

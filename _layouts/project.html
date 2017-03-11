@@ -1,5 +1,40 @@
+--- 
+layout: classic 
 ---
-layout: classic
----
-Tu bude predpísaný layout pre projekty
-{{content}}
+
+<div style="align-content: top;">
+    <div class="left-column" style="width: 75%;">
+        {{content}}
+    </div>
+
+    <div class="right-column" style="width: 20%; border-left: 1px solid black; padding: 5px;">
+        <h2>Stav projektu:</h2>
+        {% if page.inprogress %}
+        <div class="project-in-progress">
+            <p>Na projekte sa pracuje</p>
+        </div>
+        {% else %}
+        <div class="project-done">
+            <p>Projekt je dokončený</p>
+        </div>
+        {% endif %}
+        <hr>
+        <h3 style="margin-top: 40px;">Ďalšie projekty:</h3>
+        <table class="list">
+            {% for post in site.posts reversed %} {% if post.layout == "wpub_assignment" or post.layout == "project" %}
+            <tr>
+
+                <td>
+                    <div class="list-cell">
+                        <a href="{{post.url}}" style="width: 100%; height: 100%; display: block;"> 
+                    {{post.title}} 
+                    </a>
+                    </div>
+                </td>
+
+            </tr>
+            {% endif %} {% endfor %}
+        </table>
+
+    </div>
+</div>

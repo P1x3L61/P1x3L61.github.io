@@ -33,6 +33,11 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-emoji-whitelist:
-  - smile
 excerpt_separator: "<!-- more -->"
+collections:
+  - hobbies
+collections:
+ hobbies:
+  permalink: /:collection/:path/
+  output: true
+welcome-message: Vitaj na mojom webe!

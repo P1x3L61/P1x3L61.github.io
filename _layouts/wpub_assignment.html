@@ -1,7 +1,6 @@
 ---
 layout: project
 ---
-Tu bude predpísaný layout pre posty o wpub zadaniach. Bude obsahovať špeciálny stĺpec, kde sa budú zobrazovať ďalšie projekty/zadania
  {% assign projectinfo = site.data.projects_info[page.assignment-id] %}
 <div class="wrapper" style="margin: 10px;">
     <hr>
@@ -24,3 +23,15 @@ Tu bude predpísaný layout pre posty o wpub zadaniach. Bude obsahovať špeciá
 </div>
 
 {{content}}
+
+<hr>
+<h2>Všetky WPUB zadania:</h2>
+{% assign posts = site.posts | where: "layout", "wpub_assignment" %}
+
+<ul>
+    {% for assignment in posts %}
+        <li>
+            <a href="{{assignment.url | relative}}" >{{assignment.title}}</a>    
+        </li>
+    {% endfor %}
+</ul>

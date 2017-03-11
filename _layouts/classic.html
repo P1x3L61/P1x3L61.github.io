@@ -8,14 +8,14 @@ layout: default
 {{content}}
 
 {% if page.author %}
+<div style="clear: left;">
     <hr>
-    <div class="wrapper">
+    <div class="wrapper" >
         <b>Autor článku:</b> {% assign author = site.data.people[page.author] %} {{author.name}} {{author.surname}}
 
         <p class="light-text">
             {{author.popis}}
         </p>
-
-
     </div>
+</div>
 {% endif %}

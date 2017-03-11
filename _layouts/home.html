@@ -12,7 +12,7 @@ layout: default
             {% for post in site.posts limit: 3 %}
             <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
-                {{ post.excerpt | strip_html}} <p style="font-size:10px;">dĺžka článku: {{post.content | number_of_words}} slov</p>
+                {{ post.excerpt | strip_html}} <p class="little-text">dĺžka článku: {{post.content | number_of_words}} slov</p>
             </li>
             {% endfor %}
         </ul>

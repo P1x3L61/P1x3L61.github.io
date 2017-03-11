@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 title:  "Môj prvý post!"
 date:   2017-03-04 10:32:00 +0100
 permalink: /:year/:month/:day/helloworld
