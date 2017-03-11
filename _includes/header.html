@@ -2,10 +2,10 @@
 
   <div class="wrapper">
 
-    <a href="{{site.url}}">
+    <a href="{{site.url | relative }}">
         <img class="site-logo" src="{{site.logo-url}}" alt="{{site.logo-alt}}" /> 
     </a>
-    <a class="site-title" href="{{site.url}}" style="text-decoration:none;" >{{ site.title | escape }}</a>
+    <a class="site-title" href="{{site.url | relative }}" style="text-decoration:none;" >{{ site.title | escape }}</a>
     <a class="site-subtitle" style="text-decoration:none;" >{{site.subtitle | escape}}</a>
 
     <div style="width: 100%;">
