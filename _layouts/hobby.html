@@ -6,15 +6,38 @@ layout: classic
     <div class="left-column">
          <img src="{{site.url}}/files/{{page.thumbnail-url}}" style="max-width: 256px; max-height: 256px; display: block"/> 
         
-        <p>Typ:
+        {% if page.type == "series" or page.type == "movie" %}
+        <p>
+        <b>Typ:</b>
         {% if page.type == "series" %}
-             Seriál
-        {% elsif page.type == "movie" %}
-             Film
+            Seriál
         {% else %}
-            iný
+            Film
         {% endif %}
         </p>
+
+        <p>
+            <b>Žánre:</b>
+            {% for genre in page.genres %}
+                {{genre.genre}}, 
+            {% endfor %}
+        </p>
+
+        <p>
+            <b>Stav:</b>
+            {% if page.ended %}
+                Ukončené natáčanie
+            {% else %}
+                Natáča sa
+            {% endif %}
+        </p>
+
+        <p>
+            <b>Hodnotenie podľa ČSFD:</b>
+            {{page.csfd}}%
+        </p>
+
+        {% endif %}
     </div>
 
     <div class="right-column">

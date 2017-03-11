@@ -6,7 +6,7 @@ inprogress: false
 ---
 
 Projekt na predmet Vývoj aplikácií s viacvrstvovou architektúrou je client-server projekt napísaný v jazyku Java Enterprise edition.
-
+<!-- more -->
 Použité technológie:
 ---
 - JavaEE

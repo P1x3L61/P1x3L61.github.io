@@ -5,7 +5,7 @@ wpub_1:
   - req: "aspoň 5 podstránok, pri využití aspoň 3 rôznych rozložení (layout-ov)"
     fulfilled: true
   - req: "aspoň 5 premenných"
-    fulfilled: false
+    fulfilled: true
   - req: "kolekcie alebo dátové súbory"
     fulfilled: true
   - req: "aspoň 5 filtrov alebo tagov"

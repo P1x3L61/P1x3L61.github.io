@@ -51,7 +51,7 @@ _ _ _
 
 - inprogress
     - Projektové príspevky obsahujú túto premennú na vyjadrenie, či je projekt stále aktívny, alebo už bolo dokončený a ďalej sa na ňom nepracuje. Tento atribút využíva layout *project*, ktorý podľa bool hodnoty pridelenej tejto premennej zobrazí informáciu, či je projekt dokončený alebo sa na projekte pracuje.
-    
+
 
 
 **Okrem premenných v šablónach používam aj premenné typické pre niektoré podstránky:**
@@ -64,7 +64,8 @@ _ _ _
     - Táto premenná sa využíva na [domovskej stránke]({{site.url}}) a zobrazuje správu na privítanie. Premenná je uložená v konfiguračnom súbore.
 - type
     - V kolekcii hobbies niektoré príspevky (o filmoch alebo seriáloch) obsahujú premennú *title*, ktoré určuje, že sa jedná o film alebo seriál.
-
+- ended, csfd, genres a genre
+    - V kolekcii *hobbies* vystupujú tieto premenné na označenie, či sa nahrávania seriálu skončilo, na urcenie hodnotenia podľa serveru ČSFD a na definovanie žánrov. Tieto premenné sú špecifické pre hobby typu *movie* a *series*, preto layout *hobby* nezobrazuje tieto informácie pri iných druhoch hobby.
 _ _ _
 
 **Stránka využíva tieto kolekcie:**
