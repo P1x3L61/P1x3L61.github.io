@@ -24,6 +24,8 @@ Dokumentácia k prvému zadaniu
     - Layout určený na podstránky o hobby. Rozdeľuje obsah na dva stĺpce, pričom v ľavom stĺpci zobrazí náhľadový obrázok (angl. thumbnail) a v pravom stĺpci sa nachádza samotný text.
     - [Príklad]({{site.url}}/hobbies/movies/westworld/)
 - project <i class="little-text"> nadradený layout: classic</i>
+    - Layout zobrazuje na pravej strane informáciu, či bol daný projekt ukončený, alebo sa na ňom ešte pracuje a tiež zobrazuje zoznam ostatných projektov, ku ktorým bol napísaný článok.
+    - [Príklad]({{site.baseurl}}{% post_url 2017-03-08-vava-projekt %})
 - wpub_assignment <i class="little-text"> nadradený layout: project</i>
     - Layout vytvorený pre účely dokumentácie zadaní WPUB. Pred samotný text príspevky vloží informácie o zadaní, ktoré načíta z dátového súboru. Tieto informácie (ako sú napríklad: krátky popis zadania, možný počet bodov, požiadavky) zobrazí v prehľadnej podobe a zároveň farebne aj textovo zobrazí, ktoré požiadavky boli splnené.
     - Príkladom je aj táto podstránka
@@ -140,6 +142,13 @@ _ _ _
         <p style="font-size: 12px;">{{page.date | date_to_long_string}}, {{page.author}}</p>
     {.% endraw %}
     {.% endhighlight %}
+{% endraw %}
+{% endhighlight %}
+
+- post_url:
+{% highlight html %}
+{% raw %}
+   [Príklad]({{site.baseurl}}{% post_url 2017-03-08-vava-projekt %})
 {% endraw %}
 {% endhighlight %}
 

@@ -7,7 +7,7 @@ description: "Moje hobby, voľnočasové aktivity a informácie o všetkom, čo 
 {{page.title}}
 ---
 
-Medzi moje záľuby patrí okrem iného sledovanie filmov a seriálov. 
+Medzi moje záľuby patrí okrem iného sledovanie filmov a seriálov. Nižšie je zoznam mojich obľúbených seriálov, prípadne filmov.
 
 
 <div class="wrapper">
@@ -26,3 +26,7 @@ Medzi moje záľuby patrí okrem iného sledovanie filmov a seriálov.
     {% endfor %}
     </ol>
 </div>
+
+- - -
+
+Okrem toho rád voľný čas vyplním prechádzkou po meste, prípadne v prírode. Hlavne tam musí byť mobilný signál :grinning:. V poslednej dobe ovšem všetok môj čas ochotne vypĺňajú školské zadania a tak som rád, keď vo voľnom čase môžem iba ležať a čumieť do blba.
