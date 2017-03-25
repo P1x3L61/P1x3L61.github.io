@@ -15,7 +15,23 @@ wpub_1:
 
 wpub_2:
  possible-score: 6
- short-description: Druhé zadanie predmetu Webové publikovanie
+ short-description: "Práca s DocBookom"
+ requirements:
+  - req: "štandardné členenie textu na kapitola, podkapitola, podpodkapitola, príloha, generovaný obsah"
+    fulfilled: true
+  - req: "zvýraznenie slov, zvýraznenie členenia textu odrážkami alebo číslovaním"
+    fulfilled: true
+  - req: "odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL"
+    fulfilled: true
+  - req: "poznámka pod čiarou"
+    fulfilled: true
+  - req: "zoznam použitej literatúry a zdrojov vrátane ich citácie v texte"
+    fulfilled: true
+  - req: "vloženie obrázku a tabuliek, odkazy na ne v texte; zoznam obrázkov a tabuliek v úvode alebo závere textu"
+    fulfilled: true
+  - req: "vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni, napríklad „cykly, while“, „cykly, for“ (najmenej ako ukážku na 10-15 pojmoch na predvedenie práce s registrom)"
+    fulfilled: true
+
 
 wpub_3:
  possible-score: 14
