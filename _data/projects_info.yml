@@ -32,8 +32,19 @@ wpub_2:
   - req: "vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni, napríklad „cykly, while“, „cykly, for“ (najmenej ako ukážku na 10-15 pojmoch na predvedenie práce s registrom)"
     fulfilled: true
 
-
 wpub_3:
  possible-score: 14
- short-description: Tretie zadanie predmetu Webové publikovanie
+ short-description: "XML Prezentácia"
+ requirements:
+  - req: "opis typu dokumentu + opis účelu navrhnutých elementov (XML Schema)"
+    fulfilled: true
+  - req: "vytvorenie ukážkovej XML prezentácie demonštrujúcej možnosti definície typu dokumentu"
+    fulfilled: true
+  - req: "základný návrh XSL transformácií, ich vhodnosť, parametrizácia"
+    fulfilled: true
+  - req: "vytvorenie XSLT pre konverziu prezentácie z XML -> XHTML+CSS"
+    fulfilled: true
+  - req: "vytvorenie XSLT pre konverziu prezentácie XML -> PDF"
+    fulfilled: true
+
 
